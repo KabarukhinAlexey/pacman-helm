@@ -9,7 +9,7 @@ spec:
     type: Git
     git:
       uri: "https://github.com/KabarukhinAlexey/pacman-demo.git"
-      ref: 
+      ref: {{ .Values.appBranch }}
     contextDir: 
   strategy:
     type: Source
