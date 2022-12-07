@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - image: docker.io/akabarukhin/pacman-demo:{{ .Values.appBranch }}
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: pacman-demo
         ports:
         - containerPort: 8080
