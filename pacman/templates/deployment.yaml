@@ -5,11 +5,11 @@ metadata:
 spec:
   selector:
     matchLabels:
-      deployment: pacman-demo
+      name: pacman-demo
   template:
     metadata:
       labels:
-        deployment: pacman-demo
+        name: pacman-demo
     spec:
       containers:
       - image: docker.io/akabarukhin/pacman-demo:{{ .Values.appBranch }}
