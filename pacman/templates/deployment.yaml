@@ -10,6 +10,7 @@ spec:
     metadata:
       labels:
         name: pacman-demo
+        appname: pacman
     spec:
       containers:
       - image: docker.io/akabarukhin/pacman-demo:{{ required "A valid imageTag is required" .Values.imageTag }}
