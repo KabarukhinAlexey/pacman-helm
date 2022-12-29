@@ -13,7 +13,7 @@ spec:
         appname: pacman
     spec:
       containers:
-      - image: docker.io/akabarukhin/pacman-demo:{{ required "A valid imageTag is required" .Values.imageTag }}
+      - image: docker.io/mikhailklimov/pacman:{{ required "A valid imageTag is required" .Values.imageTag }}
         imagePullPolicy: Always
         name: pacman-demo
         ports:
